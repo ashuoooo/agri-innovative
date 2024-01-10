@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/css/help_styles.css">
+    <title>AgriInnovative</title>
+</head>
+<body>
+    <div id="preloader"></div>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><b>AgriInnovative</b></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="{{ url_for('home') }}">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Dashboard</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{{ url_for('services') }}">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{{ url_for('news') }}">News</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{{ url_for('help') }}">Help</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><b>Sign-In</b></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <br>
+      <br>
+
+      <h3 style="font-weight: 100;letter-spacing: 2px;color: white;text-align: center;">CONTACT <b>US</b></h3>
+      <div class="contactlogo"><iframe src="https://lottie.host/embed/ea0b4d6d-131f-48ca-a053-09ff7a084f67/dxaRke77qL.json"></iframe></div>
+      <br>
+      <br>
+
+      <div class="container">
+        <h6 style="color: white;text-align: left;margin-left: 25%;"><b>For assistance , Reach us out:-</b></h6>
+        <p style="color: white;text-align: right;margin-right: 25%;"><span style="letter-spacing: 1px;">ENGLISH</span>:- +91 4555556666</p>
+        <p style="color: white;text-align: right;margin-right: 25%;"><span style="letter-spacing: 1px;">ODIA</span>:- +91 4555556666</p>
+        <p style="color: white;text-align: right;margin-right: 25%;"><span style="letter-spacing: 1px;">TAMIL</span>:- +91 4555556666</p>
+        <p style="color: white;text-align: right;margin-right: 25%;"><span style="letter-spacing: 1px;">TELUGU</span>:- +91 4555556666</p>
+        <p style="color: white;text-align: right;margin-right: 25%;"><span style="letter-spacing: 1px;">URDU</span>:- +91 4555556666</p>
+
+
+      </div>
+      <br>
+      <br>
+      <h2 style="color: white;letter-spacing: 3px;text-align: center;font-weight: 200;">FAQ</h2>
+      <br>
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <b>Accordion Item #1</b>
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <b>Accordion Item #1</b>
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <b>Accordion Item #1</b>
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <br>
+      <br>
+
+    </div>
+
+
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+      <script>
+      var loader=document.getElementById("preloader");
+      window.addEventListener("load",function(){
+        loader.style.display="none";
+      })
+      </script>
+</body>
+</html>

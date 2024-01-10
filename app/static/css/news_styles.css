@@ -1,0 +1,174 @@
+#preloader
+{
+    background: black url(A.gif) no-repeat center center;
+    background-size: 15%;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 100;
+}
+@media (min-width: 992px)
+{.navbar-expand-lg .navbar-collapse 
+{
+   
+    flex-direction: row-reverse;
+}
+
+.nav-link
+{
+    margin:9px;
+}}
+
+.nav-link
+{
+  display: inline-block;
+  position: relative;
+  color: white;
+}
+
+.nav-link:hover
+{
+    color: #7ED957;
+}
+
+.container-fluid
+{
+    background-color: #002700;
+
+}
+.navbar.navbar-expand-lg.bg-body-tertiary
+{
+    padding-top: 0;
+    padding-bottom:0;
+}
+.navbar-brand
+{
+    color: white;
+    transition: 0.5s;
+}
+.navbar-brand:hover
+{
+    color: #7ED957;
+    transition: 0.5s;
+}
+
+body
+{
+    background-color: #004C11;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/*web news ticker*/
+
+.ticker-wrapper-h{
+	display: flex;	
+	position: fixed;
+	overflow: hidden;
+	border: 1px solid #98ED4D;
+    bottom: 0;
+    width: 100vw;
+    background-color: #004C11;
+}
+
+.ticker-wrapper-h .heading{
+	background-color: #98ED4D;
+	color: black;
+	padding: 5px 10px;
+	flex: 0 0 auto;
+	z-index: 1000;
+}
+.ticker-wrapper-h .heading:after{
+	content: "";
+	position: absolute;
+	top: 0;
+	border-left: 20px solid #98ED4D;
+	border-top: 17px solid transparent;
+	border-bottom: 15px solid transparent;
+}
+
+
+.news-ticker-h{
+	display: flex;
+	margin:0;
+	padding: 0;
+	padding-left: 90%;
+	z-index: 999;
+	
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-name: tic-h;
+	animation-duration: 30s;
+	
+}
+.news-ticker-h:hover { 
+	animation-play-state: paused; 
+}
+
+.news-ticker-h li{
+	display: flex;
+	width: 100%;
+	align-items: center;
+	white-space: nowrap;
+	padding-left: 20px;
+}
+
+.news-ticker-h li a{
+	color: white;
+	font-weight: 100;
+    text-decoration: none;
+}
+
+@keyframes tic-h {
+	0% {
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+		visibility: visible;
+	}
+	100% {
+		-webkit-transform: translate3d(-100%, 0, 0);
+		transform: translate3d(-100%, 0, 0);
+	}
+}
+
+.newsbody
+{
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 30vh;
+}
+
+.newsimg
+{
+    width: 20%;
+    height: 85%;
+    overflow: hidden;
+}
+
+.newspara
+{
+    height: 85%;
+    width: 75%;
+    color: white;
+}
+
+.newsbtn
+{
+    position: relative;
+    bottom: 0;
+    border-radius: 10px;
+    background-color: white;
+    border: none;
+    transition: 0.5s;
+}
+
+.newsbtn:hover
+{
+    transition: 0.5s;
+    background-color: #98ED4D;
+    transform: scale(1.05);
+}

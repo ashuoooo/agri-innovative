@@ -1,0 +1,95 @@
+@media (min-width: 992px)
+{.navbar-expand-lg .navbar-collapse 
+{
+   
+    flex-direction: row-reverse;
+}
+
+.nav-link
+{
+    margin:9px;
+}}
+
+.nav-link
+{
+  display: inline-block;
+  position: relative;
+  color: white;
+}
+
+.nav-link:hover
+{
+    color: #7ED957;
+}
+
+.container-fluid
+{
+    background-color: #002700;
+
+}
+.navbar.navbar-expand-lg.bg-body-tertiary
+{
+    padding-top: 0;
+    padding-bottom:0;
+}
+.navbar-brand
+{
+    color: white;
+    transition: 0.5s;
+}
+.navbar-brand:hover
+{
+    color: #7ED957;
+    transition: 0.5s;
+}
+
+#preloader
+{
+    background: black url(A.gif) no-repeat center center;
+    background-size: 15%;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 100;
+}
+
+body
+{
+    background-color: #004C11;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.contactlogo
+{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    height: auto;
+}
+.contactlogo > iframe
+{
+    height: 32vh;
+}
+
+.accordion
+{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    align-items: center;
+    flex-direction: column;
+}
+
+.accordion-item
+{
+    width: 70%;
+    align-self: center;
+    background-color: #9CFFAA;
+}
+.accordion-button
+{
+    background-color: #1ECF36;
+}
