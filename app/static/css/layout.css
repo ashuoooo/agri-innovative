@@ -1,3 +1,4 @@
+
 @media (min-width: 992px)
 {.navbar-expand-lg .navbar-collapse 
 {
@@ -34,17 +35,21 @@
 {
   display: inline-block;
   position: relative;
-  color: white;
+  color: rgb(13, 13, 13);
+}
+
+.nav-link.login-link {
+    color: blue;
 }
 
 .nav-link:hover
 {
-    color: #7ED957;
+    color: #1db5c3;
 }
 
 .container-fluid
 {
-    background-color: #002700;
+    background-color: #d1dcde;
 
 }
 .navbar.navbar-expand-lg.bg-body-tertiary
@@ -54,18 +59,18 @@
 }
 .navbar-brand
 {
-    color: white;
+    color: rgb(46, 134, 228);
     transition: 0.5s;
 }
 .navbar-brand:hover
 {
-    color: #7ED957;
+    color: #c82da4;
     transition: 0.5s;
 }
 
 body
 {
-    background-color: #004C11;
+    background-color: #6ec781;
 }
 
 .desc
@@ -76,3 +81,5 @@ body
     padding: 2% 3% 3% 3%;
     text-align: justify;   
 }
+
+

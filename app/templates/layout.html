@@ -12,29 +12,29 @@
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#"><b>AgriInnovative</b></a>
+          <a class="navbar-brand" href="{{ url_for('home')}}"><b>AgriInnovative</b></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" href="{{ url_for('home') }}">Home</a>
+                <a class="nav-link" href="{{ url_for('home') }}"><b>Home</b></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Dashboard</a>
+                <a class="nav-link" href="{{url_for('dashboard')}}"><b>Dashboard</b></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="{{ url_for('services') }}">Services</a>
+                <a class="nav-link" href="{{ url_for('services') }}"><b>Services</b></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="{{ url_for('news') }}">News</a>
+                <a class="nav-link" href="{{ url_for('news') }}"><b>News</b></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="{{ url_for('help') }}">Help</a>
+                <a class="nav-link" href="{{ url_for('connect') }}"><b>Connect</b></a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="{{ url_for('login')}}"><b>Login</b></a>
+              <li class="nav-item" >
+                <a class="nav-link login-link" href="{{ url_for('login')}}"><b>Login</b></a>
               </li>
             </ul>
           </div>

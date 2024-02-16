@@ -14,13 +14,13 @@
       <div class="card">
         <div class="face front">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXIWp_DRMmI3qGd-wgDSb5zxqU5YGpGZNOFQ&usqp=CAU" alt="">
-            <h6>Find Nearest market</h6>
+            <h6>Find Suitable market</h6>
         </div>
         <div class="face back">
             <h6>Find Nearest market</h6>
-            <p>Find nearest market to sell crop</p>
+            <p>Find suitable market to sell crop</p>
             <div class="link">
-                <a href="#">Click here</a>
+                <a href="{{url_for('suitable_market')}}">Click here</a>
             </div>
         </div>
     </div>
@@ -34,7 +34,7 @@
             <h6>Disease Identification</h6>
             <p>Predicts the disease caught by your crop</p>
             <div class="link">
-                <a href="#">Click here</a>
+                <a href="{{url_for('disease_identification')}}">Click here</a>
             </div>
         </div>
     </div>
@@ -61,7 +61,7 @@
             <h6>Crop Recommendation</h6>
             <p>Recommends you appropriate crop in your area </p>
             <div class="link">
-                <a href="#">Click here</a>
+                <a href="{{url_for('crop_recommendation')}}">Click here</a>
             </div>
         </div>
     </div>
