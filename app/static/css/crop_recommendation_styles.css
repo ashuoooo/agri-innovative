@@ -1,1 +1,51 @@
 @import url('layout.css');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #6ec781;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.form-container {
+    flex: 1;
+    width: 100%; /* Adjusted to take up full width */
+}
+
+.form-container form {
+    max-width: 400px;
+    margin: auto;
+}
+
+.side-images {
+    flex: 1;
+}
+
+.side-images img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .form-container {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .side-images {
+        display: none; /* Hide images on smaller screens */
+    }
+}
