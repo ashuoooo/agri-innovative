@@ -35,9 +35,9 @@ def crop_recommendation():
 def disease_identification():
     return render_template('disease_identification.html')
 
-@app.route('/fertilizer_recommendation')
-def fertilizer_recommendation():
-    return render_template('fertilizer_recommendation.html')
+# @app.route('/fertilizer_recommendation') before ferti_recommendation
+# def fertilizer_recommendation():
+#     return render_template('fertilizer_recommendation.html')
 @app.route('/check_weather')
 def check_weather():
     return render_template('check_weather.html')
