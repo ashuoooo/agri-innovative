@@ -2,15 +2,18 @@
 
 {% block title %} Fertilizer Recommendation - AgriInnovative {% endblock %}
 
-{% block styles %}  <link rel="stylesheet"  type="text/css" href="{{ url_for('static', filename='css/ferti_styles.css') }}" > 
- <link rel="stylesheet"  type="text/css" href="{{ url_for('static', filename='css/layout.css') }}" > 
+{% block styles %} 
+<link rel="stylesheet"  type="text/css" href="{{ url_for('static', filename='css/layout.css') }}" > 
+<link rel="stylesheet"  type="text/css" href="{{ url_for('static', filename='css/ferti_styles.css') }}" > 
+ 
+ 
 
 {% endblock %} 
 
 
 {% block body %}
-    <div class="image-container">
-        <img src="../static/images/FR_left_image.png" alt="Left Image" class="left-image">
+    <div class="body-container">
+        <img src="../static/images/FR_left_image.jpeg" alt="Left Image" class="left-image">
         <div id="form-container">
             <h1 align="center">Fertilizer Recommendation for Crops</h1>
             <form action="/fertilizer_name" method="post">
@@ -90,7 +93,7 @@
             
         {% endif %}
         </div>
-        <img src="../static/images/FR_right_image.jpg" alt="Right Image" class="right-image">
+        <img src="../static/images/FR_right_image.jpeg" alt="Right Image" class="right-image">
     </div>
 
     

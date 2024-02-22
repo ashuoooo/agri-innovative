@@ -36,9 +36,7 @@ def crop_recommendation():
 def disease_identification():
     return render_template('disease_identification.html')
 
-# @app.route('/fertilizer_recommendation') before ferti_recommendation
-# def fertilizer_recommendation():
-#     return render_template('fertilizer_recommendation.html')
+
 @app.route('/check_weather')
 def check_weather():
     return render_template('check_weather.html')
@@ -133,7 +131,7 @@ def fertilizer_name():
     predicted_fertilizer = [reverse_fertilizer[prediction[0]]]
 
     # print("Predicted Fertilizer: "+predicted_fertilizer[0])
-    return render_template('ferti_recommendation.html', recommended=predicted_fertilizer[0])
+    return render_template('fertilizer_recommendation.html', recommended=predicted_fertilizer[0])
 
 
     

@@ -1,10 +1,6 @@
+
 body {
-    font-family: Arial, sans-serif;
-    
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-color: #f0f0f0;
+ background-color: rgba(164, 171, 173, 0.763);
 }
 #container {  
     display: flex;        
@@ -64,16 +60,16 @@ select {
     height: 40px;
 }
 
-.image-container {
+.body-container {
     display: flex;
     justify-content: center;
-    align-items: center;
+    
 }
 
 .left-image,
 .right-image {
-    width: 28%; 
-    height: 50%; 
+    width: 29%; 
+    height: 570px; 
 }
 
 .footer-content {
