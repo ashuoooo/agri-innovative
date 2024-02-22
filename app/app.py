@@ -8,6 +8,7 @@ import numpy as np
 
 
 app = Flask(__name__, static_url_path='/static')
+app.debug = True
 
 @app.route('/')
 def home():
@@ -71,9 +72,9 @@ def register():
 
 # ferti-recommendation
 
-@app.route('/ferti_recommendation')
-def ferti_recommendation():
-    return render_template('ferti_recommendation.html')
+@app.route('/fertilizer_recommendation')
+def fertilizer_recommendation():
+    return render_template('fertilizer_recommendation.html')
 
 @app.route('/fertilizer_name', methods=['POST'])
 def fertilizer_name():
