@@ -5,29 +5,55 @@
 
 {%block body %}
 
-    <div class="container">
-        <div class="side-images">
-            <img src="https://images.unsplash.com/photo-1544961371-516024f8e267?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Left Image">
-        </div>
-        <div class="form-container">
-            <form action="#" method="POST">
-                <h2> CROP Form</h2>
-                <input type="text" name="input1" placeholder="Input 1"><br>
-                <input type="text" name="input2" placeholder="Input 2"><br>
-                <input type="text" name="input3" placeholder="Input 3"><br>
-                <input type="text" name="input4" placeholder="Input 4"><br>
-                <input type="text" name="input5" placeholder="Input 5"><br>
-                <input type="text" name="input6" placeholder="Input 6"><br>
-                <input type="text" name="input7" placeholder="Input 7"><br>
-                <input type="text" name="input8" placeholder="Input 8"><br>
-                <button type="submit">Submit</button>
-            </form>
-        </div>
-        <div class="side-images">
-            <img src="https://images.unsplash.com/photo-1563207937-508961e52353?q=80&w=1854&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Right Image">
-        </div>
-    </div>
+<div class="left" id="left">
+</div> 
 
+<div class="center" id="center">
+
+  <h2>CROP RECOMMENDATION</h2>
+
+  <form action="/crop_prediction" method="post">
+    <label for="nitrogen">Nitrogen</label>
+    <input class="input_field"  type="number" name="nitrogen" id="nitrogen"  required><br>
+    
+    <label for="phosphorus">Phosphorus</label>
+    <input class="input_field" type="number" name="phosphorus" id="phosphorus" required><br>
+
+    <label for="potassium">Potassium</label>
+    <input class="input_field" type="number" name="potassium" id="potassium"><br>
+    <label for="ph">PH Value</label>
+    <input  class="input_field" type="number" name="ph" id="ph" step="0.1"><br>
+
+    <label for="rainfall">RainFall</label>
+    <input class="input_field" type="number" name="rainfall" id="rainfall" ><br>
+
+    <div class="form_group">
+      <label for="State"><b>State</b></label>
+      <select class="input_field"
+        onchange="print_city('state', this.selectedIndex);"
+        id="sts"
+        name="stt"
+        required
+      ></select>
+      <br />
+      <label for="City"><b>City</b></label>
+      <select class="input_field"
+        id="state"
+        name="city"
+        required
+      ></select>
+      <script language="javascript">
+        print_state("sts");
+      </script>
+    </div>
+    <input class="button" type="submit" value="predict" class="predict_button">
+  </form>
+
+</div>
+ 
+<div class="right" id="right">
+
+</div>
 
 
 {% endblock %}

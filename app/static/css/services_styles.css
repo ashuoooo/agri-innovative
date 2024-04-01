@@ -1,4 +1,13 @@
 @import url('layout.css');
+
+.heading {
+    font-weight: bold;
+text-align: center;
+letter-spacing: 2px;
+color: blue;
+font-weight: 100;
+}
+
 .card {
     position: relative;
     width: 200px;
@@ -57,7 +66,12 @@
 }
 
 .card .back .link a {
+    text-decoration: none;
     color: #f3f3f3;
+    font-weight:bold;
+}
+.card .back .link a:hover {
+    color: #bd1a1a;
 }
 
 .card .back h6 {
@@ -103,10 +117,7 @@
 
 @media only screen and (max-width: 600px) {
     /* Adjusting the layout for screens smaller than 600px width */
-    .card {
-        width: 100%; /* Set the width to 100% to occupy full width */
-        margin: 18px 0; /* Adjust the margin to create space between cards */
-        float: none; /* Remove the float to display cards in a single column */
-        clear: both; /* Clear the float to prevent overlapping */
-    }
-}
+    .cardsec {
+        flex-direction: column;
+
+}}

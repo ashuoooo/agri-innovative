@@ -1,51 +1,105 @@
 @import url('layout.css');
 
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
+.left{
+    width: 33.33%;
+    float: left;
+    height: 900px;
+    background-image: url('../images/image1.jpeg');
 }
 
-.container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #6ec781;
-    padding: 20px;
-    margin: 20px;
-    border-radius: 10px;
+.right{
+    width: 33.33%;
+    float: right;
+    height: 900px;
+    background-image: url('../images/image1.jpeg');
 }
 
-.form-container {
-    flex: 1;
-    width: 100%; /* Adjusted to take up full width */
+.center{
+    background-color:transparent;
+    width: 33.33%;
+    display: inline-block;
+    height: 900px;
+
 }
 
-.form-container form {
-    max-width: 400px;
-    margin: auto;
+.center h2{
+color: blue; 
+text-align: center;
+font-weight: boldpx;
 }
 
-.side-images {
-    flex: 1;
+.center label{
+   display: inline-block;
+   width: 150px; 
+   margin-top: 5%;
+   margin-left: 10%;
+
+    font-weight: bold;
 }
 
-.side-images img {
-    width: 100%;
-    border-radius: 10px;
+
+.center .input_field{
+        background-color: lightgray;
+        border-radius: 5px;
+        padding: 5px;
+
+      }
+.center .button{
+    margin-top: 5%;
+    margin-left: 40%;
+    text-align: center;
+
 }
 
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-    }
 
-    .form-container {
-        width: 100%;
-        margin-bottom: 20px;
-    }
 
-    .side-images {
-        display: none; /* Hide images on smaller screens */
-    }
+.button{
+  appearance: none;
+  background-color: rgb(46, 134, 228);
+  border: 1px solid rgba(27, 31, 35, .15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 6px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.button:focus:not(:focus-visible):not(.focus-visible) {
+  box-shadow: none;
+  outline: none;
+}
+
+.button:hover {
+  background-color: #bd1a1a;
+}
+
+.button:focus {
+  box-shadow: rgba(46, 164, 79, .4) 0 0 0 3px;
+  outline: none;
+}
+
+.button:disabled {
+  background-color: #94d3a2;
+  border-color: rgba(27, 31, 35, .1);
+  color: rgba(255, 255, 255, .8);
+  cursor: default;
+}
+
+.button:active {
+  background-color: #298e46;
+  box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
 }
