@@ -11,7 +11,8 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     />
-    <link rel="stylesheet" href="style.css" />
+    
+    <link rel="stylesheet" href="../static/css/style.css" />
     <title>Agri Innovative</title>
   </head>
   <body>
@@ -22,16 +23,21 @@
           <li class="link"><a href="#home">Home</a></li>
           <li class="link"><a href="#dashboard">Dashboard</a></li>
           <li class="link"><a href="#craft">Services</a></li>
-          <li class="link"><a href="app/templates/news.html">News</a></li>
-          <li class="link"><a href="app/templates/help.html">Help</a></li>
-          <li class="link"><a href="app/templates/login.html">Sign-In</a></li>
+          <!--<li class="link"><a href="../templates/news.html">News</a></li>-->
+          <li class="link"><a href="{{ url_for('news') }}">News</a></li>
+          <!--<li class="link"><a href="../templates/help.html">Help</a></li>
+          <li class="link"><a href="../templates/login.html">Sign-In</a></li>-->
+          <li class="link"><a href="{{ url_for('help') }}">Help</a></li>
+          <li class="link"><a href="{{ url_for('login') }}">Sign-In</a></li>
+
 
         </ul>
         <div class="nav__menu__btn" id="menu-btn">
           <span><i class="ri-menu-line"></i></span>
         </div>
         <div class="nav__actions">
-          <a href="app/templates/accountdetail.html"><span><i class="ri-user-fill"></i></span></a>
+          <!--<a href="../templates/accountdetail.html"><span><i class="ri-user-fill"></i></span></a>-->
+          <a href="{{ url_for('accountdetail') }}"><span><i class="ri-user-fill"></i></span></a>
         </div>
       </nav>
       <div class="section__container header__container" id="home">
@@ -48,7 +54,7 @@
     </header>
 
     <section class="section__container choose__container" id="choose">
-      <img class="choose__bg" src="assets/dot-bg.png" alt="bg" />
+      <img class="choose__bg" src="../static/images/assets/dot-bg.png" alt="bg" />
       <div class="choose__content">
         <h2 class="section__header">Why Choose us</h2>
         <p class="section__subheader">
@@ -93,7 +99,7 @@
          
       </div>
       <div class="choose__image">
-        <img src="assets/new images/body-2.jpg" alt="choose" />
+        <img src="../static/images/assets/new images/body-2.jpg" alt="choose" />
       </div>
     </section>
 
@@ -102,10 +108,10 @@
 
     <section class="section__container modern__container" id="modern">
       <div class="modern__image">
-        <img src="assets/dot-bg.png" alt="bg" class="modern__bg" />
-        <img src="assets/new images/header-5.jpg" alt="modern" class="modern__img-1" />
-        <img src="assets/new images/body-3.jpg" alt="modern" class="modern__img-2" />
-        <img src="assets/new images/tractor-is-farm-word-farming-is-bottom_889779-1271.avif" alt="modern" class="modern__img-3" />
+        <img src="../static/images/assets/dot-bg.png" alt="bg" class="modern__bg" />
+        <img src="../static/images/assets/new images/header-5.jpg" alt="modern" class="modern__img-1" />
+        <img src="../static/images/assets/new images/body-3.jpg" alt="modern" class="modern__img-2" />
+        <img src="../static/images/assets/new images/tractor-is-farm-word-farming-is-bottom_889779-1271.avif" alt="modern" class="modern__img-3" />
       </div>
       <div class="modern__content">
         <h2 class="section__header">
@@ -153,45 +159,52 @@
       </div>
       <div class="craft__image">
         <div class="craft__image__content">
-          <img src="services/fruit-market.jpg" alt="craft" />
+          <img src="../static/images/services/fruit-market.jpg" alt="craft" />
           <p>Find Nearest Market</p>
         </div>
-        <a href="app/templates/suitable_market.html"><i class="ri-add-line"></i></a>
+        <!-- <a href="../templates/suitable_market.html"><i class="ri-add-line"></i></a>-->
+        <a href="{{ url_for('suitable_market') }}"><i class="ri-add-line"></i></a>
       </div>
       <div class="craft__image">
         <div class="craft__image__content">
-          <img src="services/govtschemes-fotor-2024031513160.png" alt="craft" />
+          <img src="../static/images/services/govtschemes-fotor-2024031513160.png" alt="craft" />
           <p>Farmers Govt Schems</p>
         </div>
-        <a href="app/templates/govtschemes.html"><i class="ri-add-line"></i></a>
+        <!--<a href="../templates/govtschemes.html"><i class="ri-add-line"></i></a>-->
+        <a href="{{ url_for('fertilizer_recommendation') }}"><i class="ri-add-line"></i></a>
       </div>
       <div class="craft__image">
         <div class="craft__image__content">
-          <img src="services/crop-disease.png" alt="craft" />
+          <img src="../static/images/services/crop-disease.png" alt="craft" />
           <p>Crop Disease Prediction</p>
         </div>
-        <a href="app/templates/disease_identification.html"><i class="ri-add-line"></i></a>
+        <!--<a href="../templates/disease_identification.html"><i class="ri-add-line"></i></a>-->
+        <a href="{{ url_for('disease_identification') }}"><i class="ri-add-line"></i></a>
       </div>
       <div class="craft__image">
         <div class="craft__image__content">
-          <img src="services/fertilizer-removebg-preview.png" alt="craft" />
+          <img src="../static/images/services/fertilizer-removebg-preview.png" alt="craft" />
           <p>Fertilizer Prediction</p>
         </div>
-        <a href="app/templates/fertilizer_recommendation.html"><i class="ri-add-line"></i></a>
+      <!--<a href="../templates/fertilizer_recommendation.html"><i class="ri-add-line"></i></a> -->
+        <a href="{{ url_for('fertilizer_recommendation') }}"><i class="ri-add-line"></i></a>
       </div>
       <div class="craft__image">
         <div class="craft__image__content">
-          <img src="services/crop-recommed-removebg-preview.png" alt="craft" />
+          <img src="../static/images/services/crop-recommed-removebg-preview.png" alt="craft" />
           <p>Crop Recommedation</p>
           </div>
-        <a href="app/templates/crop_recommendation.html"><i class="ri-add-line"></i></a>
+        <!--<a href="../templates/crop_recommendation.html"><i class="ri-add-line"></i></a>-->
+        <a href="{{ url_for('crop_recommendation') }}"><i class="ri-add-line"></i></a>
       </div>
       <div class="craft__image">
         <div class="craft__image__content">
-          <img src="services/whether-removebg-preview.png" alt="craft" />
+          <img src="../static/images/services/whether-removebg-preview.png" alt="craft" />
           <p>Wheather Prediction</p>
           </div>
-        <a href="app/templates/check_weather.html"><i class="ri-add-line"></i></a>
+       <!-- <a href="../templates/check_weather.html"><i class="ri-add-line"></i></a>-->
+       <a href="{{ url_for('check_weather') }}"><i class="ri-add-line"></i></a>
+
       </div>
     </section>
 
@@ -227,6 +240,6 @@
 
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <script src="main.js"></script>
+    <script src="../static/scripts/main.js"></script>
   </body>
 </html>

@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet"  href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     
-    {% block styles %} <link rel="stylesheet"  type="text/css" href="{{ url_for('static', filename='css/layout_styles.css') }}" >
+    {% block styles %} <link rel="stylesheet"  type="text/css" href="{{ url_for('static', filename='css/style.css') }}" >
   
     {% endblock %}
    {% block scripts %} {% endblock %}
@@ -15,7 +15,7 @@
 </head>
 
 <body>
-
+<!--
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
           <a class="navbar-brand" href="{{ url_for('home')}}"><b>AgriInnovative</b></a>
@@ -77,10 +77,37 @@
           </div>
         </div>
       </nav>
+    -->
+    <header class="header">
+      <nav>
+        <div class="nav__logo"><a href="#">AGRI-INNOVTIVE</a></div>
+        <ul class="nav__links" id="nav-links">
+          <li class="link"><a href="#home">Home</a></li>
+          <li class="link"><a href="#dashboard">Dashboard</a></li>
+          <li class="link"><a href="#craft">Services</a></li>
+          <!--<li class="link"><a href="../templates/news.html">News</a></li>-->
+          <li class="link"><a href="{{ url_for('news') }}">News</a></li>
+          <!--<li class="link"><a href="../templates/help.html">Help</a></li>
+          <li class="link"><a href="../templates/login.html">Sign-In</a></li>-->
+          <li class="link"><a href="{{ url_for('help') }}">Help</a></li>
+          <li class="link"><a href="{{ url_for('login') }}">Sign-In</a></li>
 
+
+        </ul>
+        <div class="nav__menu__btn" id="menu-btn">
+          <span><i class="ri-menu-line"></i></span>
+        </div>
+        <div class="nav__actions">
+          <!--<a href="../templates/accountdetail.html"><span><i class="ri-user-fill"></i></span></a>-->
+          <a href="{{ url_for('accountdetail') }}"><span><i class="ri-user-fill"></i></span></a>
+        </div>
+      </nav>
+      
+    </header>
+    
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
-      <script type="text/JavaScript" src="{{ url_for('static', filename='scripts/cities.js') }}"></script>
+      <script type="text/JavaScript" src="{{ url_for('static', filename='scripts/main.js') }}"></script>
     {% block body %} {% endblock %}
     
 </body>

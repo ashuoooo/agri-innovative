@@ -11,12 +11,16 @@ app = Flask(__name__, static_url_path='/static')
 
 @app.route('/')
 def home():
-    return render_template('home.html')
+    return render_template('index.html')
 #====================================================DASHBOARD=================================================================================
 #Backend code for Dashboard page
 @app.route('/dashboard')
 def dashboard():
     return render_template('dashboard.html')
+
+@app.route('/accountdetail')
+def accountdetail():
+    return render_template('accountdetail.html')
 
 #===================================================SERVICES==================================================================================
 #Backend code for Services page

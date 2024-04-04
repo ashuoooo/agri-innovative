@@ -50,6 +50,14 @@ document.getElementById("searchForm").addEventListener("submit", function(event)
   window.location.href = searchUrl;
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+  const plusButton = document.querySelector('.craft__image a i');
+
+  plusButton.addEventListener('click', function() {
+    window.location.href = "../templates/suitable_market.html";
+  });
+});
+
 
 const scriptURL=""
 const form= document.forms['contact.form']
