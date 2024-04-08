@@ -71,7 +71,7 @@ header {
       rgba(0, 0, 0, 0.8),
       rgba(0, 0, 0, 0.2)
     ),
-    url("../../static/images/assets/new images/header-2.jpg");
+    url("../../static/images/assets/new images/header-2 main.jpg");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -723,6 +723,16 @@ nav {
     display: block;
   }
 
+  .subscriber{
+    color: #ffffff;
+    margin-top: 10px;
+    display: block;
+  }
+
+  .footer_imglu{
+    padding-left: 100px;
+    margin: 100px;
+  }
   .header__container h1 {
     margin-top: 4rem;
     font-size: 3.5rem;

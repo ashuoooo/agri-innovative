@@ -50,25 +50,18 @@ document.getElementById("searchForm").addEventListener("submit", function(event)
   window.location.href = searchUrl;
 });
 
-document.addEventListener('DOMContentLoaded', function() {
-  const plusButton = document.querySelector('.craft__image a i');
 
-  plusButton.addEventListener('click', function() {
-    window.location.href = "../templates/suitable_market.html";
-  });
-});
+/* const scriptURL = "https://script.google.com/macros/s/AKfycbzVifHPnuGwvQ6lq-_2Jg7RZuzQNZDtmAzl6cc4PcrU97DToXJabOrTt-9k5PSpo6s_/exec";
+    const form = document.forms['contact-form']; // corrected the form name
 
+    form.addEventListener('submit', e => {
+        e.preventDefault();
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    }) */
 
-const scriptURL=""
-const form= document.forms['contact.form']
-
-form.addEventListener('submit' , e=>{
-  e.preventDefault();
-  fetch(scriptURL , {method:'POST' , body: new FormData(form)})
-  .then(response => alert("Thank you! your form is submitted successfully."))
-  .then (() =>{window.location.reload(); })
-  .catch(error => console.error('Error!',error.message))
-});
+  
 
 document.addEventListener('contextmenu', function(e) {
   e.preventDefault();

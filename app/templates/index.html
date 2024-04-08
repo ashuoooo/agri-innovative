@@ -18,16 +18,16 @@
   <body>
     <header class="header">
       <nav>
-        <div class="nav__logo"><a href="#">AGRI-INNOVTIVE</a></div>
+        <div class="nav__logo"><a href="#">AGRI-INNOVATIVE</a></div>
         <ul class="nav__links" id="nav-links">
           <li class="link"><a href="#home">Home</a></li>
-          <li class="link"><a href="#dashboard">Dashboard</a></li>
+          <li class="link"><a href="{{ url_for('dashboard') }}">Dashboard</a></li>
           <li class="link"><a href="#craft">Services</a></li>
           <!--<li class="link"><a href="../templates/news.html">News</a></li>-->
           <li class="link"><a href="{{ url_for('news') }}">News</a></li>
           <!--<li class="link"><a href="../templates/help.html">Help</a></li>
           <li class="link"><a href="../templates/login.html">Sign-In</a></li>-->
-          <li class="link"><a href="{{ url_for('help') }}">Help</a></li>
+          <li class="link"><a href="{{ url_for('connect') }}">Connect</a></li>
           <li class="link"><a href="{{ url_for('login') }}">Sign-In</a></li>
 
 
@@ -212,27 +212,33 @@
     <footer class="footer">
       <div class="section__container footer__container">
         <div class="footer__content">
-          <h4>SUBSCRIBE TO GET THE LATEST NEWS ABOUT US</h4>
+          <h4>FOLLOW OUR WEBSITE EVERYDAY </h4>
           <p>
-            We recommend you to subscribe to our newspaper. Enter your email to
-            get our daily updates about us
+            To get new Agricultural Services Which improve Farmers Productivity
+            and get our daily updates from us.
           </p>
         </div>
         <div class="footer__form">
-          <form method="post" action="https://script.google.com/macros/s/AKfycbzk6pUCRtYedOlOXYERhgeM4g7UgfhdUpl6XasNadCKTmVkZ_en34RR9EAS4_HMbhQy/exec" name="contact-form">
+          <div class="footer_imglu" style="display: flex; align-items: center; margin-right: 50px; margin-left: 150px; ">
+            <img src="../static/images/assets/new images/new-logo.png" alt="Agro Logo" style="width: 100px; height: 100px;margin-left: 20px; ">
+            <img src="../static/images/assets/new images/new-logo2.png" alt="Agro Logo" style="width: 100px; height: 100px;margin-left: 20px;">
+            <img src="../static/images/assets/new images/newlogora.png" alt="Agro Logo" style="width: 100px; height: 100px;margin-left: 20px;">
+
+          <!-- <img src="../static/images/assets/new images/agro-logo.png"/>
+         <form method="post" action="https://script.google.com/macros/s/AKfycbzVifHPnuGwvQ6lq-_2Jg7RZuzQNZDtmAzl6cc4PcrU97DToXJabOrTt-9k5PSpo6s_/exec" name="contact-form">
             <input type="email" name="your-email" placeholder="Enter your email" />
-            <button><input type="submit" value="" id ="submit">Subscribe</button>
-          </form>
+            <button><input type="submit" value="" id ="submit">Subscribe</button> 
+          </form>-->
+        </div>
         </div>
       </div>
       <div class="section__container footer__bar">
         <div class="footer__logo">
-          <h4><a href="#">AGRI-INNOVTIVE</a></h4>
+          <h4><a href="#">AGRI-INNOVATIVE</a></h4>
           <p>Copyright © 2024 JNTUACEK. All rights reserved.</p>
         </div>
         <ul class="footer__nav">
           <li class="footer__link"><a href="#">About</a></li>
-          <li class="footer__link"><a href="#">Partnership</a></li>
           <li class="footer__link"><a href="#">Privacy Policy</a></li>
         </ul>
       </div>
